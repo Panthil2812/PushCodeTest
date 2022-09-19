@@ -1,0 +1,169 @@
+Attached is a file containing the various employees of entirely real and not at all fictional company Aperture Laboratories, each with multiple clock-in and clock-out times representing shifts.
+
+
+
+There are 4 different time periods throughout the work day that these hours can be attributed to:
+
+1. Morning (5:00 AM - 12:00 PM)            (5:00  -  12:00)  7
+
+2. Afternoon (12:00 PM - 6:00 PM)          (12:00  - 18: 00)  6
+
+3. Evening (6:00 PM - 11:00 PM)            (18:00 - 23:00)   5
+
+4. Late Night (11:00 PM - 5:00 AM)         (23:00 - 5:00)   6
+
+
+
+Your Task: Find out how many hours each shift attributes to these 4 time periods per day and return the result in a valid JSON format.
+
+
+
+Example output for a single employee/date:
+
+
+
+[
+
+{
+
+"employee_id": 1,
+
+"first_name": "Cave",
+
+"last_name": "Johnson",
+
+"labour": [
+
+{
+
+"date": "2016-01-01",
+
+"total": 9.2,
+
+"labour_by_time_period": {
+
+"period1": 2.2,
+
+"period2": 5,
+
+"period3": 1,
+
+"period4": 1
+
+}
+
+}
+
+]
+
+}
+
+]
+
+
+
+Please submit or share a zip file with the following to me
+
+
+
+PushCodeTest.zip:
+
+- code file (a file containing the actual code with whatever language you are most comfortable using)
+
+- labour_hours.json (a JSON formatted array of the results in the structure outlined above for all employees)
+
+
+input : 
+
+{
+  "employees": [
+    {
+      "id": 0,
+      "first_name": "Cave",
+      "last_name": "Johnson"
+    },
+    {
+      "id": 1,
+      "first_name": "Chell",
+      "last_name": "Johnson"
+    },
+    {
+      "id": 2,
+      "first_name": "Doug",
+      "last_name": "Rattmann"
+    },
+    {
+      "id": 3,
+      "first_name": "GLaDOS",
+      "last_name": null
+    }
+  ],
+  "clocks": [
+    {
+      "employee_id": 0,
+      "clock_in_datetime": "1953-07-20 09:01:12",
+      "clock_out_datetime": "1953-07-20 14:50:59"
+    },
+    {
+      "employee_id": 1,
+      "clock_in_datetime": "2017-02-07 10:05:12",
+      "clock_out_datetime": "2017-02-07 14:50:59"
+    },
+    {
+      "employee_id": 2,
+      "clock_in_datetime": "2017-02-04 19:30:36",
+      "clock_out_datetime": "2017-02-05 03:04:41"
+    },
+    {
+      "employee_id": 3,
+      "clock_in_datetime": "2012-11-12 00:00:00",
+      "clock_out_datetime": "2012-11-13 23:59:59"
+    },
+    {
+      "employee_id": 1,
+      "clock_in_datetime": "2017-02-04 09:05:12",
+      "clock_out_datetime": "2017-02-04 11:50:59"
+    },
+    {
+      "employee_id": 1,
+      "clock_in_datetime": "2017-02-04 12:28:27",
+      "clock_out_datetime": "2017-02-04 20:16:24"
+    }
+  ]
+}
+
+
+output : 
+{
+
+"employee_id": 1,
+
+"first_name": "Cave",
+
+"last_name": "Johnson",
+
+"labour": [
+
+{
+
+"date": "2016-01-01",
+
+"total": 9.2,
+
+"labour_by_time_period": {
+
+"period1": 2.2,
+
+"period2": 5,
+
+"period3": 1,
+
+"period4": 1
+
+}
+
+}
+
+]
+
+}
